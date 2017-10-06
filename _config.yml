@@ -8,7 +8,7 @@
 # Site settings
 title: Jacob's Website
 email: your-email@domain.com
-description: Test build
+# description: Test build
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jacong17.github.io/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
