@@ -42,7 +42,7 @@
       <button type="button" class="btn btn-success" onclick = "location.href = '{{ site.baseurl }}/about.html';">About</button>
 
       <!-- Contextual button for informational alert messages -->
-      <button type="button" class="btn btn-info" onclick = "location.href = '{{ site.baseurl }}/pages/contact.md';">Info</button>
+      <button type="button" class="btn btn-info" onclick = href="{{ "/_pages/contact.md" | prepend: site.baseurl }}">Info</button>
 
       <!-- Indicates caution should be taken with this action -->
       <button type="button" class="btn btn-warning">Warning</button>
