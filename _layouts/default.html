@@ -32,7 +32,25 @@
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
+ <!-- Navbar -->
+  <div class="container">
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-primary" onclick = "location.href = '{{ site.baseurl }}/index.html';">Primary</button>
       
+      <!-- Indicates a successful or positive action -->
+      <button type="button" class="btn btn-success" onclick = "location.href = '{{ site.baseurl }}/about.html';">About</button>
+  
+      <!-- Contextual button for informational alert messages -->
+      <button type="button" class="btn btn-info" onclick = "location.href = '{{ site.baseurl }}/about.html';">Info</button>
+      
+      <!-- Indicates caution should be taken with this action -->
+      <button type="button" class="btn btn-warning">Warning</button>
+    
+      <!-- Indicates a dangerous or potentially negative action -->
+      <button type="button" class="btn btn-danger">Danger</button>
+     </div>
+   </div>    
 
     </section>
 
