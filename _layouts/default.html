@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-{% seo %}
-  {% include head.html %}   
+{% include head.html %}   
   
 <body>
   {% include header.html %}
@@ -9,8 +8,8 @@
 		<article>
 			{{ content }}
 		</article>
+	  {% include footer.html %}
 	</main>
   </body>
   
-{% include footer.html %}
 </html>
