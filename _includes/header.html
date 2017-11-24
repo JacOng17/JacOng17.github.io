@@ -12,6 +12,15 @@
     </svg>
   </a>
 
+  <div class="trigger">
+  {% for my_page in site.pages %}
+  {% if my_page.title %}
+    <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+  {% endif %}
+  {% endfor %}
+  </div>
+</nav>
+
  <!-- Navbar -->
   <div class="container">
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
@@ -30,18 +39,7 @@
       <!-- Indicates a dangerous or potentially negative action -->
       <button type="button" class="btn btn-danger">Danger</button>
      </div>
-   </div>
-    
-  <div class="trigger">
-  {% for my_page in site.pages %}
-  {% if my_page.title %}
-    <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-  {% endif %}
-  {% endfor %}
-  </div>
-</nav>
-
-    
+   </div>    
   </div>
 
 </header>
