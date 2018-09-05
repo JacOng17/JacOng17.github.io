@@ -14,6 +14,8 @@ url: "https://jacong17.github.io/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+google_analytics: [Your Google Analytics tracking ID]
+
 # Build settings
 markdown: kramdown
 
@@ -23,3 +25,5 @@ sass:
 theme: jekyll-theme-cayman
 
 include: ["_pages"]
+
+#show_downloads: true
