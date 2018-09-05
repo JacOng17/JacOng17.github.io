@@ -2,25 +2,3 @@
 ---
 
 @import "{{ site.theme }}";
-
-//Banner
-.project-name
-{
-	font-size: 3.5rem;
-}
-
-//Banner
-.project-tagline
-{
-	font-size: 1.75rem;
-}
-
-
-.main-content
-{
-	max-width: 100rem;
-	padding: 2rem 6rem;
-	margin: 0 auto;
-	font-size: 100%;
-}
-
