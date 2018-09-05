@@ -92,20 +92,6 @@
     }
 }
 
-
-//Banner
-h1.project-name
-{
-    font-size: 3.5rem;
-}
-
-//Banner
-h2.project-tagline
-{
-    font-size: 1.75rem;
-}
-
-
 /**
  * Site footer
  */
@@ -181,10 +167,6 @@ h2.project-tagline
  */
 .page-content {
     padding: $spacing-unit 0;
-    max-width: 100rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 100%;
 }
 
 .page-heading {
@@ -208,12 +190,6 @@ h2.project-tagline
 .post-link {
     display: block;
     font-size: 24px;
-}
-
-#content.main-content
-{
-    
-
 }
 
 
