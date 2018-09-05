@@ -181,6 +181,10 @@ h2.project-tagline
  */
 .page-content {
     padding: $spacing-unit 0;
+    max-width: 100rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 100%;
 }
 
 .page-heading {
@@ -208,10 +212,8 @@ h2.project-tagline
 
 #content.main-content
 {
-    max-width: 100rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 100%;
+    
+
 }
 
 
