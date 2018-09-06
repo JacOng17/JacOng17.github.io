@@ -192,6 +192,13 @@
     font-size: 24px;
 }
 
+#content.main-content
+{
+    max-width: 100rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 100%;
+}
 
 /**
  * Posts
