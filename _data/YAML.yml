@@ -1,0 +1,22 @@
+# This will be dynamically generated in OurTeam.html
+teamMembers:
+  # Ensure no. is consecutive. Copy & paste but un-comment(#).
+  # Remember that in OurTeam.html -> arrayNo = no. -1
+  #- <no.>:
+  #  name:
+  #    jobPosition: 
+  #    briefIntro:
+  - 1:
+    name: 
+    jobPosition: Job Position
+    briefIntro: Intro
+  
+  - 2:
+    name: 
+    jobPosition: Job Position 
+    briefIntro: Intro
+  
+  - 3:
+    name: 
+    jobPosition: 
+    briefIntro: 
