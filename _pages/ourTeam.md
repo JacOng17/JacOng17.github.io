@@ -12,19 +12,19 @@ layout: default
 	</div>
   	<div class="row">
 		<div class="col-md-4 col-sm-4 col-xs-12">
-			<!--row section-(blue or red or green or yellow or add new colours)>
+			<!--row section-(blue or red or green or yellow or add new colours)-->
       <div class="row section-red ourTeam-box text-center">
 				<div class="col-md-12 section1">
-					<img src="/assets/media/Team/img1.jpg" title="img1" alt = "img1" style = "background-color: black;">
+					<img src="/assets/media/Team/IMAGETITLE.jpg" title="img1" alt = "img1" >
 				</div>
-				arrayNo = number in Team_Members_Intro.yml -1  -> Delete this line when block is uncommented
+				<!-- arrayNo = number in Team_Members_Intro.yml -1  -->
 				<div class="col-md-12 section2">
-					<p>{{ site.data.Team_Members_Intro.teamMembers[arrayNo].name }}</p><br>
-					<h1>{{ site.data.Team_Members_Intro.teamMembers[arrayNo].jobPosition }}</h1><br>
+					<p>{{ site.data.Team_Members_Intro.teamMembers[0].name }}</p><br>
+					<h1>{{ site.data.Team_Members_Intro.teamMembers[0].jobPosition }}</h1><br>
 				</div>
 				<div class="col-md-12 section3">
 					<p>
-						{{ site.data.Team_Members_Intro.teamMembers[arrayNo].briefIntro }}
+						{{ site.data.Team_Members_Intro.teamMembers[0].briefIntro }}
 					</p>
 				</div>
 				<div class="col-md-12 section4">
@@ -38,7 +38,7 @@ layout: default
 		<div class="col-md-4 col-sm-4 col-xs-12">
 			<div class="row section-green ourTeam-box text-center">
 				<div class="col-md-12 section1">
-					<img src="/assets/media/Team/img1.jpg" title="img1" alt = "img1" style = "background-color: black;">
+					<img src="/assets/media/Team/IMAGETITLE.jpg" title="img2" alt = "img2">
 				</div>
 				<div class="col-md-12 section2">
 					<p>{{ site.data.Team_Members_Intro.teamMembers[arrayNo].name }}</p><br>
@@ -60,7 +60,7 @@ layout: default
 		<div class="col-md-4 col-sm-4 col-xs-12">
 			<div class="row section-blue ourTeam-box text-center">
 				<div class="col-md-12 section1">
-					<img src="/assets/media/Team/img1.jpg" title="img1" alt = "img1" style = "background-color: black;">
+					<img src="/assets/media/Team/IMAGETITLE.jpg" title="img3" alt = "img3">
 				</div>
 				<div class="col-md-12 section2">
 					<p>{{ site.data.Team_Members_Intro.teamMembers[arrayNo].name }}</p><br>
