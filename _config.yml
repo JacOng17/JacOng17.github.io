@@ -24,7 +24,7 @@ sass:
 
 theme: jekyll-theme-cayman
 
-include: ["_pages","node_modules"]
+include: ["_pages"]
 
 defaults:
   -
