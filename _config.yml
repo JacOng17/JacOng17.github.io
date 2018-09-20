@@ -26,4 +26,11 @@ theme: jekyll-theme-cayman
 
 include: ["_pages"]
 
-#show_downloads: true
+defaults:
+  -
+    scope:
+      path: "" # means “all files”
+    values:
+      layout: default
+      
+show_downloads: true
