@@ -1,0 +1,43 @@
+language: ruby
+
+rvm:
+  - 2.4.1
+
+before_script:
+ - chmod +x ./script/cibuild # or do this locally and commit
+
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+script: ./script/cibuild
+
+# branch whitelist, only for GitHub Pages
+branches:
+  only:
+  - gh-pages     # test the gh-pages branch
+  - /pages-(.*)/ # test every branch which starts with "pages-"
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
+sudo: false # route your build to the container-based infrastructure for a faster build
+
+cache: bundler
+
+script:
+  - bundle exec jekyll build --watch
+  
+deploy:
+  provider: pages # Specifies we’re using GitHub Pages.
+  skip-cleanup: true # Tells Travis not to delete build files.
+  github-token: "$github_token"  # Enter github_token (variable) & the token in TravisCi. Using an environment variable to avoid exposing our token to the public.
+  keep-history: true
+  local_dir: build # Tells Travis to only take the files from the /build directory for deployment.
+  on:
+    branch: master # Tells Travis when to trigger deployment. We only want to deploy when we push to the master branch of the repository.
+    
