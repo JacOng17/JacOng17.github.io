@@ -14,7 +14,7 @@ script: ./script/cibuild
 branches:
   only:
   - gh-pages     # test the gh-pages branch
-  - master
+  - /pages-(.*)/ # test every branch which starts with "pages-"
 
 env:
   global:
@@ -29,8 +29,10 @@ sudo: false # route your build to the container-based infrastructure for a faste
 
 cache: bundler
 
-script:
+install:
   - bundle install
+  
+script:
   - bundle exec jekyll build --watch
   
 deploy:
