@@ -55,24 +55,6 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** Site Header */
 .site-header { border-bottom: 1px solid #e8e8e8; min-height: 56px; margin-top: -15px; position: relative; }
 
-/* NAVIGATION BAR -------------------------------------------------- */
-#navigation { min-height: 70px !important; padding-top: 10px; }
-
-#navigation .navbar-brand { padding-right: 28px; width: 280px; border-right: 3px solid rgba(255, 255, 255, 0.1); font-family: "hobo-std", sans-serif; font-style: italic; font-size: 26px !important; color: #5fcf80 !important; }
-
-#navigation .navbar-brand .site-logo { float: left; margin-top: -10px; margin-right: 1rem; width: 250px; }
-
-#navigation #navbar { float: right !important; margin-right: -15px; font-family: 'Helvetica Rounded', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 38px; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important; }
-
-@media (max-width: 768px) { #navigation #navbar { float: none !important; margin-right: 0; } }
-#navigation #navbar .navbar-nav li a { color: #b2bbbd !important; }
-
-#navigation #navbar .navbar-nav li a:hover, #navigation #navbar .navbar-nav li a:focus { color: #ffffff !important; border-bottom: 2px solid #ffffff !important; }
-
-#navigation #navbar .navbar-nav .active a { color: #ffffff !important; border-bottom: 2px solid #ffffff !important; }
-
-#navigation #navbar .navbar-nav .dropdown-menu li a { color: #515151 !important; text-shadow: none !important; }
-
 .site-title { font-size: 24px; font-weight: 300; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 .site-title, .site-title:visited { color: #424242; }
 

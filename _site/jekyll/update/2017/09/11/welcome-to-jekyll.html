@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=Your Google Analytics tracking ID"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'Your Google Analytics tracking ID');
+      </script>
+    
+    
     <meta charset="UTF-8">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
@@ -38,6 +48,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- ** Custom CSS **  -->
   <link rel="stylesheet" href="/css/style.css" >
  
@@ -49,31 +62,48 @@
     <header class="site-header">
 
   <div class="wrapper">
-    <a class="site-title" href="/">Jacob's Website</a>
-     <nav class="site-nav">
+    <nav class="site-nav">
       <div class="trigger">
-      <!-- Note: page is a variable -->
-      
-      
-        <a class="page-link" href="/about/">About</a>
-      
-      
-      
-        <a class="page-link" href="/contact/">Contact</a>
-      
-      
-      
-      
-      
-      
-      
-        <a class="page-link" href="/_pages/ourTeam.html">Our Team</a>
-      
-      
-      
-      
-      
-      
+        <!-- <a class="site-title" href="/">Jacob's Website</a> -->
+        <a class="active" href="/">Jacob's Website</a>
+        <!--  Note: my_page is a variable -->
+        
+        
+          <a class="page-link" href="/about/">About</a>
+          
+        
+        
+          <a class="page-link" href="/contact/">Contact</a>
+          
+        
+        
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        
+        
+        
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        
+        
+        
+          <a class="page-link" href="/_pages/ourTeam.html">Our Team</a>
+          
+        
+        
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        
+        
+        
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        
+        
       </div>
     </nav>
   </div>
@@ -91,7 +121,9 @@
   </header>
 
   <body>
+
     <main id="content" class="main-content" role="main">
+
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">

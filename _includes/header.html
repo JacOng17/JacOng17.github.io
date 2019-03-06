@@ -1,16 +1,20 @@
 <header class="site-header">
 
   <div class="wrapper">
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
     <nav class="site-nav">
       <div class="trigger">
-      <!--  Note: my_page is a variable -->
-      {% for my_page in site.pages %}
-      {% if my_page.title %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      {% endif %}
-      {% endfor %}
+        <!-- <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
+        <a class="active" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <!--  Note: my_page is a variable -->
+        {% for my_page in site.pages %}
+        {% if my_page.title %}
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% else %}
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        {% endif %}
+        {% endfor %}
       </div>
     </nav>
   </div>
