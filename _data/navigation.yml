@@ -1,0 +1,9 @@
+- title: About
+  url: /pages/about.html
+- title: Team
+  url: /pages/team.html
+- title: Contact
+  url: /pages/contact.html
+  sublinks:
+    - title: FAQ
+      url: /pages/faq.html
