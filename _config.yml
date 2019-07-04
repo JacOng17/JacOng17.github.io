@@ -1,0 +1,56 @@
+# Site
+name: "Jacob's Blog"
+title: "Jacob's Blog"
+#description: ""
+logo: 'assets/images/logo.svg'
+favicon: 'assets/images/logo.svg'
+baseurl: /
+mailchimp-list:
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  jacob:
+    name: Jacob
+    display_name: Jacob
+    gravatar: 
+    email:
+    web:
+    twitter:
+    description:
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
