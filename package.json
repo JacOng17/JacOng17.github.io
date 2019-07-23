@@ -1,3 +1,6 @@
+/* To install npm -> npm init -> npm i
+   Once installed, gulp can be used -> gulp
+*/
 {
   "name": "JacOng17.github.io",
   "version": "1.0.0",
