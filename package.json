@@ -1,4 +1,5 @@
 /* To install npm -> npm init -> npm i
+   npm install browser-sync gulp --save-dev
    Once installed, gulp can be used -> gulp
 */
 {
