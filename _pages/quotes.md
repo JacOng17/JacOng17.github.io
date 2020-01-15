@@ -11,6 +11,10 @@ permalink: /quotes
   </div>
     <div class="image-column">
       <img src="assets/images/quotes/all_in_no_plan_b.png">
+      <img src="assets/images/quotes/follow_your_own_path.png">
+  </div>
+      <div class="image-column">
+      <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.png">
   </div>
 </div>
 
