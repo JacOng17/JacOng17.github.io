@@ -1,0 +1,38 @@
+---
+layout: page
+title: Quotes
+permalink: /quotes
+---
+<!-- Responsive Images -->
+<div class="image-row">
+  <div class="image-column">
+    <img src="assets/images/quotes/dont_let_the_fear_of_failure.png">
+    <img src="assets/images/quotes/growth_is_not_automatic.png">
+  </div>
+    <div class="image-column">
+      <img src="assets/images/quotes/all_in_no_plan_b.png">
+  </div>
+</div>
+
+<!-- Grid Images
+
+<div class="gallery">
+    <figure class="gallery__item gallery__item--1">
+        <img src="assets/images/image-1.jpg" alt="" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+        <img src="assets/images/image-2.jpg" alt="" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+        <img src="assets/images/image-3.jpg" alt="" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+        <img src="assets/images/image-4.jpg" alt="" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--5">
+        <img src="assets/images/image-5.jpg" alt="" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--6">
+        <img src="assets/images/image-6.jpg" alt="" class="gallery__img">
+    </figure>
+</div> -->
