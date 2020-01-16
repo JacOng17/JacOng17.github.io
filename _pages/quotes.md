@@ -15,6 +15,7 @@ permalink: /quotes
   </div>
       <div class="image-column">
       <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.png">
+      <img src="assets/images/quotes/when_the_dream_is_big_enough.png">
   </div>
 </div>
 
