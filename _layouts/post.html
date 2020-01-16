@@ -20,9 +20,10 @@ post_class: post-template
 				<!-- Author Box -->
 				{% if page.author %}
 				<div class="row post-top-meta">
-					<div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+					<!-- Thumbnail image for author-->
+					<!-- <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
 						<img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-					</div>
+					</div> -->
 					<!-- <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
 						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
 						<span class="author-description">{{ author.description }}</span>
@@ -58,6 +59,7 @@ post_class: post-template
 				{% endif %}
 				<!-- End Toc -->
 				{{content}}
+				<button id="scrollToTopBtn" title="Go to top">Back to Top</button>
 			</div>
 
 			<!-- Rating -->
