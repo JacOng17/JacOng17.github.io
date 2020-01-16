@@ -5,7 +5,7 @@ permalink: /quotes
 ---
 <!-- Responsive Images -->
 <!-- <img src="assets/images/quotes/"> -->
-<div class="image-row">
+<!-- <div class="image-row">
   <div class="image-column">
     <img src="assets/images/quotes/dont_let_the_fear_of_failure.png">
     <img src="assets/images/quotes/growth_is_not_automatic.png">
@@ -19,6 +19,24 @@ permalink: /quotes
       <div class="image-column">
       <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.png">
       <img src="assets/images/quotes/when_the_dream_is_big_enough.png">
+  </div>
+</div> -->
+
+<div class="image-row">
+  <div class="image-column">
+    {% for quote in site.data.quotes.column1 %}
+      <img src="{{ quote.image }}">
+    {% endfor %}
+  </div>
+  <div class="image-column">
+    {% for quote in site.data.quotes.column2 %}
+      <img src="{{ quote.image }}">
+    {% endfor %}
+  </div>
+  <div class="image-column">
+    {% for quote in site.data.quotes.column3 %}
+      <img src="{{ quote.image }}">
+    {% endfor %}
   </div>
 </div>
 
