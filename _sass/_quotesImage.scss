@@ -35,8 +35,8 @@
 
 // .gallery {
 //   display: grid;
-//   grid-template-columns: repeat(8, 1fr);
-//   grid-template-rows: repeat(8, 5vw);
+//   grid-template-columns: repeat(8, 10fr);
+//   grid-template-rows: repeat(8, 10vw);
 //   grid-gap: 1.5rem; 
 // }
 
@@ -84,22 +84,22 @@
 //   grid-column-start: 1;
 //   grid-column-end: 5;
 //   grid-row-start: 3;
-//   grid-row-end: 6;
+//   grid-row-end: 7;
 
 //   /** Alternative Syntax **/
 //   /* grid-column: 1 / span 4;  */
-//   /* grid-row: 3 / span 3; */
+//   /* grid-row: 3 / span 5; */
 // }
 
 // .gallery__item--5 {
 //   grid-column-start: 1;
 //   grid-column-end: 5;
-//   grid-row-start: 6;
-//   grid-row-end: 9;
+//   grid-row-start: 7;
+//   grid-row-end: 12;
 
 //   /** Alternative Syntax **/
 //   /* grid-column: 1 / span 4; */
-//   /* grid-row: 6 / span 3; */
+//   /* grid-row: 7 / span 5; */
 // }
 
 // .gallery__item--6 {
