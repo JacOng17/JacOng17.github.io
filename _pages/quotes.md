@@ -4,14 +4,17 @@ title: Quotes
 permalink: /quotes
 ---
 <!-- Responsive Images -->
+<!-- <img src="assets/images/quotes/"> -->
 <div class="image-row">
   <div class="image-column">
     <img src="assets/images/quotes/dont_let_the_fear_of_failure.png">
     <img src="assets/images/quotes/growth_is_not_automatic.png">
+    <img src="assets/images/quotes/change_is_inevitable_growth_is_optional.png">
   </div>
     <div class="image-column">
       <img src="assets/images/quotes/all_in_no_plan_b.png">
       <img src="assets/images/quotes/follow_your_own_path.png">
+      <img src="assets/images/quotes/what_you_are_is_your_gift_to_god.png">
   </div>
       <div class="image-column">
       <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.png">
