@@ -5,8 +5,8 @@ author: Jacob
 tags: [ Jekyll, Tutorial ]
 image: assets/images/16.jpg
 description:
-featured: true
-hidden: false
+featured: false
+hidden: true
 rating: 4.5
 beforetoc: "Markdown editor is a very powerful thing. In this article I'm going to show you what you can actually do with it, some tricks and tips while editing your post."
 toc: true
