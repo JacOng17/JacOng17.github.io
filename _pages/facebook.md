@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Facebook feeds
+title: Facebook Feeds
 permalink: /facebook-feeds
 ---
 
