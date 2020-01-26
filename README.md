@@ -4,6 +4,7 @@
 
 **Blog Posts** _(comment out any unused line with #)_
 
+```
 ---
 layout: post
 title:  ""
@@ -18,5 +19,5 @@ rating: 4.5 (out of 5)
 beforetoc: ""
 toc: (true/false)
 ---
-
+```
 ### This website is built with Jekyll (hosted on GitHub Pages) and Mediumish template for Jekyll. [More info](https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/) & [On GitHub](https://github.com/wowthemesnet/mediumish-theme-jekyll)
