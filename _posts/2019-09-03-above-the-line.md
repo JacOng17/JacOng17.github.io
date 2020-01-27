@@ -7,7 +7,6 @@ image: "assets/images/books/above-the-line.jpg"
 description:
 featured: true
 hidden: false
-rating: 5
 beforetoc: ""
 toc: false
 ---

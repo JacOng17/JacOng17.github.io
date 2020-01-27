@@ -7,7 +7,6 @@ image: "assets/images/books/everyone-communicates-few-connect.jpg"
 description:
 featured: true
 hidden: false
-rating: 5
 beforetoc: ""
 toc: false
 ---
