@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=yes">
 
-		<!--For LIVE site-->
-		<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.svg" type="image/svg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=yes">
 
-		<!--For dev site-->
-		<link rel="icon" href="/assets/images/logo.svg" type="image/svg">
+  <!--For LIVE site-->
+  <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.svg" type="image/svg">
 
-		<!-- <title>{{ page.title }} | {{site.name}}</title> -->
-		<title>{{ site.baseurl }} | {{ site.name }}</title>
+  <!--For dev site-->
+  <link rel="icon" href="/assets/images/logo.svg" type="image/svg">
 
-		{% seo %}
+  <!-- <title>{{ page.title }} | {{site.name}}</title> -->
+  <title>{{ site.baseurl }} | {{ site.name }}</title>
 
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
-		<!--For LIVE site-->
-		<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
-		<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
-		<script
-  		src="https://code.jquery.com/jquery-3.4.1.min.js"
-  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous">
-		</script>
+  {% seo %}
 
-		<!--For dev site-->
-		<!-- <link href="/assets/css/screen.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--For LIVE site-->
+  <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+
+  <!--For dev site-->
+  <!-- <link href="/assets/css/screen.css" rel="stylesheet">
 		<link href="/assets/css/main.css" rel="stylesheet">
 		<script
 		src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 		crossorigin="anonymous">
 		</script> -->
-	</head>
+</head>
 
-	<!-- {% if jekyll.environment == 'production' %}
+<!-- {% if jekyll.environment == 'production' %}
 	<!-- change your GA id in _config.yml -->
-	<!-- <script>
+<!-- <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -48,158 +48,175 @@
 	</script>
 	{% endif %} -->
 
-	{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-	<body class="{{layout}}">
-		<!-- defer loading of font and font awesome -->
-		<noscript id="deferred-styles">
-      <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-		</noscript>
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+
+<body class="{{layout}}">
+  <!-- defer loading of font and font awesome -->
+  <noscript id="deferred-styles">
+    <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </noscript>
 
 
-		<!-- Begin Menu Navigation
+  <!-- Begin Menu Navigation
 		================================================== -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
-			<div class="container pr-0">
-				<!-- Begin Logo -->
-				<a class="navbar-brand" href="{{ site.baseurl }}/">
-          <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-				</a>
-				<!-- End Logo -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+      <!-- Begin Logo -->
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+      </a>
+      <!-- End Logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-				</button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-				<div class="collapse navbar-collapse" id="navbarMediumish">
-					<!-- Begin Menu -->
-          <ul class="navbar-nav ml-auto">
-            {% if page.url == "/" %}
-            <li class="nav-item active">
+      <div class="collapse navbar-collapse" id="navbarMediumish">
+        <!-- Begin Menu -->
+        <ul class="navbar-nav ml-auto">
+          {% if page.url == "/" %}
+          <li class="nav-item active">
             {% else %}
-            <li class="nav-item">
+          <li class="nav-item">
             {% endif %}
-              <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/index.html">Posts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/quotes">Quotes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/facebook-feeds">Facebook Feeds</a>
-            </li>            
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/tags">Tags</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/categories">Categories</a>
-            </li>
-            {% include search-lunr.html %}
-          </ul>
-					<!-- End Menu -->
-				</div>
-			</div>
-		</nav>
-		<!-- End Navigation
+            <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/index.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/quotes">Quotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/facebook-feeds">Facebook Feeds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/tags">Tags</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/categories">Categories</a>
+          </li>
+          {% include search-lunr.html %}
+        </ul>
+        <!-- End Menu -->
+      </div>
+    </div>
+  </nav>
+  <!-- End Navigation
 		================================================== -->
 
-		<div class="site-content">
-			<div class="container">
-				<!-- Site Title
+  <div class="site-content">
+    <div class="container">
+      <!-- Site Title
 				================================================== -->
-				<div class="mainheading">
-          <h1 class="sitetitle">{{ site.name }}</h1>
-          <p class="lead">
-              {{ site.description }}
-          </p>
-				</div>
+      <div class="mainheading">
+        <h1 class="sitetitle">{{ site.name }}</h1>
+        <p class="lead">
+          {{ site.description }}
+        </p>
+      </div>
 
-				<!-- Content
+      <!-- Content
 				================================================== -->
-				<div class="main-content">
-          {{ content }}
-				</div>
+      <div class="main-content">
+        {{ content }}
+      </div>
 
-        {% if site.mailchimp-list %}
-          <!-- Bottom Alert Bar
+      {% if site.mailchimp-list %}
+      <!-- Bottom Alert Bar
           ================================================== -->
-          <div class="alertbar">
-            <div class="container text-center">
-              <span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-              <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
-                <div class="mc-field-group">
-                  <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-                  <input type="submit" value="Subscribe" name="subscribe" class="heart">
-                </div>
-              </form>
+      <div class="alertbar">
+        <div class="container text-center">
+          <span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b>
+            from us, subscribe to our newsletter</span>
+          <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form"
+            class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+              <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"
+                autocomplete="on" required>
+              <input type="submit" value="Subscribe" name="subscribe" class="heart">
             </div>
-          </div>
-        {% endif %}
+          </form>
+        </div>
       </div>
+      {% endif %}
+    </div>
 
-      <!-- Categories Jumbotron
+    <!-- Categories Jumbotron
       ================================================== -->
-      <div class="jumbotron fortags">
-        <div class="d-md-flex h-100">
-          <div class="col-md-4 transpdark align-self-center text-center h-100">
-            <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
-            </div>
+    <div class="jumbotron fortags">
+      <div class="d-md-flex h-100">
+        <div class="col-md-4 transpdark align-self-center text-center h-100">
+          <div class="d-md-flex align-items-center justify-content-center h-100">
+            <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span
+                class="d-none d-md-inline">→</span></h2>
           </div>
-          <div class="col-md-8 p-5 align-self-center text-center">
-            {% assign categories_list = site.categories %}
-              {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                  <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
-              {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
-              {% endif %}
-            {% assign categories_list = nil %}
+        </div>
+        <div class="col-md-8 p-5 align-self-center text-center">
+          {% assign categories_list = site.categories %}
+          {% if categories_list.first[0] == null %}
+          {% for category in categories_list %}
+          <a class="mt-1 mb-1"
+            href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}
+            ({{ site.tags[category].size }})</a>
+          {% endfor %}
+          {% else %}
+          {% for category in categories_list %}
+          <a class="mt-1 mb-1"
+            href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}
+            ({{ category[1].size }})</a>
+          {% endfor %}
+          {% endif %}
+          {% assign categories_list = nil %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Begin Footer
+      ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 text-center text-lg-left">
+            Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
+          </div>
+          <div class="col-md-6 col-sm-6 text-center text-lg-right">
+            <a href="https://github.com/JacOng17/JacOng17.github.io">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
-
-      <!-- Begin Footer
-      ================================================== -->
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
-            </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">
-              <a href="https://github.com/JacOng17/JacOng17.github.io">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- End Footer
+    </footer>
+    <!-- End Footer
       ================================================== -->
 
-		</div> <!-- /.site-content -->
+  </div> <!-- /.site-content -->
 
-    <!-- Scripts
+  <!-- Scripts
     ================================================== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/scroll-to-top-button.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/scroll-to-top-button.js"></script>
 
-    {% if site.lazyimages == "enabled" %}
-    <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
-    {% endif %}
+  {% if site.lazyimages == "enabled" %}
+  <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+  {% endif %}
 
-    <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+  <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-    {% if page.layout == 'post' %}
-    {% endif %}
+  {% if page.layout == 'post' %}
+  {% endif %}
 
-	</body>
+</body>
+
 </html>
