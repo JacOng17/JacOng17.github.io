@@ -1,13 +1,11 @@
-
 sudo: required
 language: ruby
+rvm:
+  -2.6.3
 cache:
   bundler: true
 
-script:
-  - echo 'Running Tests'
-  - bundle exec rspec
-
 run:
+  - bundle config set deployment 'true'
   - echo 'Installing Bundle packages!'
   - bundle install
