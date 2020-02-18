@@ -1,0 +1,13 @@
+
+sudo: required
+language: ruby
+cache:
+  bundler: true
+
+script:
+  - echo 'Running Tests'
+  - bundle exec rspec
+
+run:
+  - echo 'Installing Bundle packages!'
+  - bundle install
