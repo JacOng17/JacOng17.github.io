@@ -8,3 +8,6 @@ install:
   - bundle config set deployment 'true'
   - echo 'Installing Bundle packages!'
   - bundle install
+run:
+  - bundle exec jekyll serve --watch
+
