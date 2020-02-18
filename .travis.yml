@@ -1,11 +1,10 @@
 sudo: required
 language: ruby
 rvm:
-  -2.6.3
+  - 2.6.3
 cache:
   bundler: true
-
-run:
+install:
   - bundle config set deployment 'true'
   - echo 'Installing Bundle packages!'
   - bundle install
