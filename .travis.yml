@@ -3,7 +3,7 @@ sudo: false # route your build to the container-based infrastructure for a faste
 language: ruby
 
 rvm:
-  - 2.6.3
+  - 2.6.4
 
 cache: bundler # caching bundler gem packages will speed up build
 
