@@ -7,18 +7,18 @@ permalink: /quotes
 <!-- <img src="assets/images/quotes/"> -->
 <!-- <div class="image-row">
   <div class="image-column">
-    <img src="assets/images/quotes/dont_let_the_fear_of_failure.png">
-    <img src="assets/images/quotes/growth_is_not_automatic.png">
-    <img src="assets/images/quotes/change_is_inevitable_growth_is_optional.png">
+    <img src="assets/images/quotes/dont_let_the_fear_of_failure.jpeg">
+    <img src="assets/images/quotes/growth_is_not_automatic.jpeg">
+    <img src="assets/images/quotes/change_is_inevitable_growth_is_optional.jpeg">
   </div>
     <div class="image-column">
-      <img src="assets/images/quotes/all_in_no_plan_b.png">
-      <img src="assets/images/quotes/follow_your_own_path.png">
-      <img src="assets/images/quotes/what_you_are_is_your_gift_to_god.png">
+      <img src="assets/images/quotes/all_in_no_plan_b.jpeg">
+      <img src="assets/images/quotes/follow_your_own_path.jpeg">
+      <img src="assets/images/quotes/what_you_are_is_your_gift_to_god.jpeg">
   </div>
       <div class="image-column">
-      <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.png">
-      <img src="assets/images/quotes/when_the_dream_is_big_enough.png">
+      <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.jpeg">
+      <img src="assets/images/quotes/when_the_dream_is_big_enough.jpeg">
   </div>
 </div> -->
 
@@ -43,21 +43,21 @@ permalink: /quotes
 <!-- Grid Images -->
 <!-- <div class="gallery">
     <figure class="gallery__item gallery__item--1">
-        <img src="assets/images/quotes/dont_let_the_fear_of_failure.png" alt="" class="gallery__img">
+        <img src="assets/images/quotes/dont_let_the_fear_of_failure.jpeg" alt="" class="gallery__img">
     </figure>
     <figure class="gallery__item gallery__item--2">
-        <img src="assets/images/quotes/growth_is_not_automatic.png" alt="" class="gallery__img">
+        <img src="assets/images/quotes/growth_is_not_automatic.jpeg" alt="" class="gallery__img">
     </figure>
     <figure class="gallery__item gallery__item--3">
-        <img src="assets/images/quotes/all_in_no_plan_b.png" alt="" class="gallery__img">
+        <img src="assets/images/quotes/all_in_no_plan_b.jpeg" alt="" class="gallery__img">
     </figure>
     <figure class="gallery__item gallery__item--4">
-        <img src="assets/images/quotes/follow_your_own_path.png" alt="" class="gallery__img">
+        <img src="assets/images/quotes/follow_your_own_path.jpeg" alt="" class="gallery__img">
     </figure>
     <figure class="gallery__item gallery__item--5">
-        <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.png" alt="" class="gallery__img">
+        <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.jpeg" alt="" class="gallery__img">
     </figure>
     <figure class="gallery__item gallery__item--6">
-        <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.png" alt="" class="gallery__img">
+        <img src="assets/images/quotes/live_today_what_you_want_to_be_remembered_for.jpeg" alt="" class="gallery__img">
     </figure>
 </div> -->
