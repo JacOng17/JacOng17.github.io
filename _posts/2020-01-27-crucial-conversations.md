@@ -3,8 +3,8 @@ layout: post
 title:  "Crucial Conversations: Tools for Talking When Stakes Are High"
 author: Jacob
 tags: [ Legacy, Mentorship, Growth Mindset, Impact, Leadership ]
-image: "assets/images/books/crucial-conversations.jpg"
-description:
+image: "assets/images/books/crucial-conversations.webp"
+description: Crucial Conversations book
 featured: true
 hidden: false
 beforetoc: ""

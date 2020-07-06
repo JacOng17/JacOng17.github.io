@@ -3,8 +3,8 @@ layout: post
 title:  "Above The Line"
 author: Jacob
 tags: [ Legacy, Mentorship, Growth Mindset, Impact, Leadership ]
-image: "assets/images/books/above-the-line.jpg"
-description:
+image: "assets/images/books/above-the-line.webp"
+description: Abouve The Line Book
 featured: true
 hidden: false
 beforetoc: ""
@@ -37,4 +37,4 @@ Be open to new ideas. Live; Listen; & Learn. You can't learn what you THINK alre
 
 Leaders need to set an example. You can't lead people to a place that you're not going to as well. If it isn't happening in you, it won't happen through you.
 
-![Above the line thinking behaviours](../assets/images/books/above-and-below-the-line-thinking-behaviours.jpg)
+![Above the line thinking behaviours](../assets/images/books/above-and-below-the-line-thinking-behaviours.webp)

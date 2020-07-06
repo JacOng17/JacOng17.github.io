@@ -1874,7 +1874,6 @@ lunr.Index.prototype.query = function (fn) {
             }
 
           }
-
           termFieldCache[termField] = true
         }
       }
@@ -2254,10 +2253,8 @@ lunr.Builder.prototype.createFieldVectors = function () {
 
       fieldVector.insert(termIndex, scoreWithPrecision)
     }
-
     fieldVectors[fieldRef] = fieldVector
   }
-
   this.fieldVectors = fieldVectors
 }
 
@@ -2338,7 +2335,6 @@ lunr.MatchData = function (term, field, metadata) {
     var key = metadataKeys[i]
     clonedMetadata[key] = metadata[key].slice()
   }
-
   this.metadata = Object.create(null)
   this.metadata[term] = Object.create(null)
   this.metadata[term][field] = clonedMetadata
@@ -2380,7 +2376,6 @@ lunr.MatchData.prototype.combine = function (otherMatchData) {
         } else {
           this.metadata[term][field][key] = this.metadata[term][field][key].concat(otherMatchData.metadata[term][field][key])
         }
-
       }
     }
   }
@@ -2509,7 +2504,6 @@ lunr.Query.prototype.clause = function (clause) {
   }
 
   this.clauses.push(clause)
-
   return this
 }
 
@@ -2534,9 +2528,7 @@ lunr.Query.prototype.clause = function (clause) {
 lunr.Query.prototype.term = function (term, options) {
   var clause = options || {}
   clause.term = term
-
   this.clause(clause)
-
   return this
 }
 lunr.QueryParseError = function (message, start, end) {

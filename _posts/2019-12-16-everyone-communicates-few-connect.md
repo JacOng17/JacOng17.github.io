@@ -3,8 +3,8 @@ layout: post
 title:  "Everyone Communicates, Few Connect"
 author: Jacob
 tags: [ Legacy, Mentorship, Growth Mindset, Impact, Leadership ]
-image: "assets/images/books/everyone-communicates-few-connect.jpg"
-description:
+image: "assets/images/books/everyone-communicates-few-connect.webp"
+description: Everyone Communicates, Few Connect book
 featured: true
 hidden: false
 beforetoc: ""
