@@ -1,4 +1,4 @@
-# My Portfolio Site
+# Jacob's Blog
 
 ## Strawman template
 
