@@ -11,7 +11,7 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^10.0.0",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
