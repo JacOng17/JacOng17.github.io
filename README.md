@@ -1,5 +1,17 @@
 # Jacob's Blog
 
+## Run using `docker-compose`
+
+**To start**
+
+`docker-compose up` then navigate to [localhost:4000](http://localhost:4000) to view the site.
+
+**To end**
+
+`ctrl+c` then `docker-compose down`
+
+---
+
 ## Strawman template
 
 **Blog Posts** _(comment out any unused line with #)_
