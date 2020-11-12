@@ -24,7 +24,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.4.1",
     "jquery-match-height": "^0.7.2",
