@@ -1,0 +1,17 @@
+{
+    "name": "Jacob's Blog",
+    "short_name": "JacobsBlog",
+    "theme_color": "#ffcbe4",
+    "background_color": "#fa99ca",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "description": "Jacob's Blog.",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "1000x820"
+        }
+    ]
+}
