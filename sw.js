@@ -13,7 +13,6 @@ const assets = [
   '{{ site.baseurl }}/assets/js/scroll-to-top-button.js',
   '{{ site.baseurl }}/assets/js/lazyload.js',
   '{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js',
-    
 //   '/assets/js/ui.js',
 //   '/assets/css/main.css',
 //   '/assets/images/background-home.jpg',
