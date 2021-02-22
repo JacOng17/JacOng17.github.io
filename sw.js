@@ -1,55 +1,75 @@
-//This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
+/**
+ * Internal dependencies
+ */
+const { iconFiles, launchScreenFiles, appleTouchIconFiles, faviconFiles, msTileFiles } = require('./helpers');
 
-//Install stage sets up the offline page in the cache and opens a new cache
-self.addEventListener('install', function(event) {
-  event.waitUntil(preLoad());
+/**
+ * Convert a list of file to human readable list
+ * @param {File[]} files
+ */
+const filesToString = files => files.map(file => `'${file}'`).join(',\n\t');
+
+/**
+ * Cache all routes and files
+ */
+const routes = `[
+	'/',
+	${filesToString(iconFiles)},
+	${filesToString(launchScreenFiles)},
+	${filesToString(appleTouchIconFiles)},
+	${filesToString(faviconFiles)},
+	${filesToString(msTileFiles)},
+	'favicons/favicon.ico'
+]`;
+
+/**
+ * Generate a service-worker.js file
+ */
+module.exports = name => `const CACHE_NAME = '${name}-cache';
+const urlsToCache = ${routes};
+self.addEventListener('install', event => {
+	self.skipWaiting();
+	event.waitUntil(
+		caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
+	);
 });
-
-var preLoad = function(){
-  console.log('[PWA Builder] Install Event processing');
-  return caches.open('pwabuilder-offline').then(function(cache) {
-    console.log('[PWA Builder] Cached index and offline page during Install');
-      return cache.addAll([]);
-  });
-};
-
-self.addEventListener('fetch', function(event) {
-  console.log('[PWA Builder] The service worker is serving the asset.');
-  event.respondWith(checkResponse(event.request).catch(function() {
-    return returnFromCache(event.request);
-  }));
-  event.waitUntil(addToCache(event.request));
+self.addEventListener('fetch', event => {
+	event.respondWith(
+		caches.match(event.request).then(response => {
+			if (response) {
+				return response;
+			}
+			const fetchRequest = event.request.clone();
+			return fetch(fetchRequest).then(response => {
+				if (
+					!response ||
+					response.status !== 200 ||
+					response.type !== 'basic'
+				) {
+					return response;
+				}
+				const responseToCache = response.clone();
+				event.waitUntil(
+					caches.open(CACHE_NAME).then(cache => {
+						cache.put(event.request, responseToCache);
+					})
+				);
+				return response;
+			});
+		})
+	);
 });
-
-var checkResponse = function(request){
-  return new Promise(function(fulfill, reject) {
-    fetch(request).then(function(response){
-      if(response.status !== 404) {
-        fulfill(response);
-      } else {
-        reject();
-      }
-    }, reject);
-  });
-};
-
-var addToCache = function(request){
-  return caches.open('pwabuilder-offline').then(function (cache) {
-    return fetch(request).then(function (response) {
-      console.log('[PWA Builder] add page to offline'+response.url);
-      return cache.put(request, response);
-    });
-  });
-};
-
-var returnFromCache = function(request){
-  return caches.open('pwabuilder-offline').then(function (cache) {
-    return cache.match(request).then(function (matching) {
-     if(!matching || matching.status == 404) {
-       return cache.match('offline.html');
-     } else {
-       return matching;
-     }
-    });
-  });
-};
+self.addEventListener('activate', event => {
+	event.waitUntil(
+		caches
+			.keys()
+			.then(cacheNames =>
+				Promise.all(
+					cacheNames
+						.filter(cacheName => cacheName !== CACHE_NAME)
+						.map(cacheName => caches.delete(cacheName))
+				)
+			)
+	);
+});
+`;
