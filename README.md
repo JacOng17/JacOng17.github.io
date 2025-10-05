@@ -1,14 +1,14 @@
 # Jacob's Blog
 
-## Run using `docker-compose`
+## Run using `bundle exec jekyll serve`
 
 **To start**
 
-`docker-compose up` then navigate to [localhost:4000](http://localhost:4000) to view the site.
+`bundle exec jekyll serve` then navigate to [localhost:4000](http://localhost:4000) to view the site.
 
 **To end**
 
-`ctrl+c` then `docker-compose down`
+`ctrl+c`
 
 ---
 
