@@ -32,4 +32,4 @@ beforetoc: ""
 toc: (true/false)
 ---
 ```
-### This website is built with Jekyll (hosted on GitHub Pages) and Mediumish template for Jekyll. [More info](https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/) & [On GitHub](https://github.com/wowthemesnet/mediumish-theme-jekyll)
+### This website is built with Jekyll (hosted on GitHub Pages) and Mediumish template for Jekyll. [On GitHub](https://github.com/wowthemesnet/mediumish-theme-jekyll)
